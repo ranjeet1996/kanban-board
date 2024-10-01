@@ -1,0 +1,139 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+}
+
+.kanban-board {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu {
+  display: flex;
+  margin-left: 12px;
+  gap: 20px; 
+}
+
+.menu-item {
+  padding: 10px;
+  border: 1px solid #ccc; 
+  background-color: #f9f9f9; 
+  border-radius: 5px; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 250px; 
+}
+
+.button {
+  width: 110px;
+  margin-left: 12px;
+  margin-bottom: 11px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.custom-line {
+  border: none;
+  border-top: 2px solid #ccc; 
+  margin: 20px 0; 
+  opacity: 0.8; 
+}
+
+
+.menu-item label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.menu-item select {
+  width: 100%;
+}
+
+select {
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+
+.grid-column {
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.grid-column h3 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.empty-state {
+  text-align: center;
+  color: #777;
+  padding: 10px;
+  border: 1px dashed #ccc;
+  border-radius: 5px;
+}
+
+.loader {
+  text-align: center;
+  font-size: 18px;
+  color: #555;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-top: 8px;
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  min-width: 200px;
+  z-index: 1000;
+}
+
+.label {
+  display: flex;
+  margin: 8px;
+}
+
+.labelText {
+  padding-right: 40px;
+}
+
+.dropdown-content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.dropdown-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dropdown-item label {
+  margin-right: 10px;
+  font-size: 14px;
+  color: #333;
+}
+
+.dropdown-item select {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 5px 10px;
+  width: 120px; 
+  background-color: #f9f9f9;
+}
